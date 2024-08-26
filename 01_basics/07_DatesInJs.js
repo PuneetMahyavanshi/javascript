@@ -1,6 +1,16 @@
 let date = new Date()
 console.log(date);
 // console.log(date.toDateString());
+const d = new Date();
+
+// Get a DateTimeFormat object for the user's current culture (via undefined)
+// Ask specifically for the long-form of the time zone name in the options
+//const dtf = Intl.DateTimeFormat(undefined, {timeZoneName: 'Asia/Kolkata'});
+
+// Format the date to parts, and pull out the value of the time zone name
+console.log(`Local Date:${date.toLocaleString()}`);
+console.log(`ISO Date:${date.toISOString()}`);
+
 // console.log(date.toTimeString("hh:mm"));//Doesn't work
 // console.log(date.toTimeString());
 
